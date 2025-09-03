@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+.hero {
+  height: 46rem;
+  position: relative; /* 절대배치된 .hero figure의 기준 */
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* inset: 0; */
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 5;
+}
+
+.hero figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* border: 5px solid #ff0000; */
+  animation: reveal-ani 1s;
+}
+
+.hero img {
+  object-position: 50% 10%;
+}
+
+.hero .inner {
+  position: relative;
+  height: 100%;
+  /* background: skyblue; */
+  z-index: 10;
+}
+
+.visual-title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  /* background: red; */
+  color: #fff;
+  width: 69rem;
+}
+
+.visual-title h2 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 1.2;
+  text-transform: uppercase; /* 대문자 표시 */
+}
+
+.visual-title h2 strong {
+  color: var(--main-color);
+}
+
+.visual-title p {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-top: 2.4rem;
+}
+
+.visual-title .cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 4.8rem;
+  background: var(--main-color);
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.5;
+
+  margin-top: 3.2rem;
+}
+
+.visual-title .cta:hover {
+  background: var(--main-color);
+  color: #fff;
+}
