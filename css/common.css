@@ -9,23 +9,22 @@
   --main-dark: #0069f3;
   --title-color: #222;
   --text-color: #555;
-    --black10:rgba(0, 0, 0, 0.1)
-  --black20:rgba(0, 0, 0, 0.2)
-  --black30:rgba(0, 0, 0, 0.3)
-  --black40:rgba(0, 0, 0, 0.4)
-  --black50:rgba(0, 0, 0, 0.5)
-  --black60:rgba(0, 0, 0, 0.6)
-  --black70:rgba(0, 0, 0, 0.7)
-  --black80:rgba(0, 0, 0, 0.8)
-  --white10:rgba(255, 255, 255, 0.1)
-  --white20:rgba(255, 255, 255, 0.2)
-  --white30:rgba(255, 255, 255, 0.3)
-  --white40:rgba(255, 255, 255, 0.4)
-  --white50:rgba(255, 255, 255, 0.5)
-  --white60:rgba(255, 255, 255, 0.6)
-  --white70:rgba(255, 255, 255, 0.7)
-  --white80:rgba(255, 255, 255, 0.8)
-
+  --black10: rgba(0, 0, 0, 0.1);
+  --black20: rgba(0, 0, 0, 0.2);
+  --black30: rgba(0, 0, 0, 0.3);
+  --black40: rgba(0, 0, 0, 0.4);
+  --black50: rgba(0, 0, 0, 0.5);
+  --black60: rgba(0, 0, 0, 0.6);
+  --black70: rgba(0, 0, 0, 0.7);
+  --black80: rgba(0, 0, 0, 0.8);
+  --white10: rgba(255, 255, 255, 0.1);
+  --white20: rgba(255, 255, 255, 0.2);
+  --white30: rgba(255, 255, 255, 0.3);
+  --white40: rgba(255, 255, 255, 0.4);
+  --white50: rgba(255, 255, 255, 0.5);
+  --white60: rgba(255, 255, 255, 0.6);
+  --white70: rgba(255, 255, 255, 0.7);
+  --white80: rgba(255, 255, 255, 0.8);
 }
 
 ::selection {
@@ -138,5 +137,69 @@ body {
     opacity: 1;
     transform: scale(1);
     filter: blur(0);
+  }
+}
+
+/* 반응형 디자인 */
+/* 태블릿 */
+
+@media (max-width: 1024px) {
+  .inner {
+    width: 94.5313%;
+  }
+
+  .header nav {
+    height: 10rem;
+  }
+
+  .gnb {
+    display: none;
+  }
+
+  .btn-menu {
+    display: block;
+    width: 4.8rem;
+    height: 4.8rem;
+    background: url(../img/ico-menu2.svg);
+  }
+}
+
+/* 반응형 디자인 */
+/* 태블릿 */
+@media (max-width: 1024px) {
+  .hero {
+    height: 64rem;
+  }
+
+  .visual-title {
+    width: 46rem;
+    width: 47.5207%;
+  }
+  .business-list {
+    flex-wrap: wrap;
+  }
+
+  .business-list li {
+    width: 47.4rem;
+    width: 48.9669%;
+    height: 28rem;
+  }
+
+  .news-con .news-text {
+    width: 47.4rem;
+    width: 48.9669%;
+  }
+
+  .news-con figure {
+    width: 47.4rem;
+    width: 48.9669%;
+  }
+
+  .news-con {
+    gap: 2rem;
+  }
+
+  .column h5 + p {
+    column-count: 1;
   }
 }
