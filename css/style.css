@@ -76,7 +76,7 @@
   font-size: 1.6rem;
   line-height: 1.5;
 
-  margin-top: 3.2rem;
+  margin: 3.2rem auto 0;
 }
 
 .visual-title .cta:hover {
@@ -86,7 +86,7 @@
 
 /* main 하위 섹션 전체 적용 (hero 제외) : 2025. 09. 04 이윤슬 */
 main > section + section {
-  padding: 9rem 0 12rem;
+  padding: 9rem 0 3rem;
 }
 
 main > section:last-child {
@@ -102,9 +102,10 @@ main > section:last-child {
 .business-list li {
   border: 1px solid var(--black30);
   /* fx1-1-a */
-  flex: 1 1 auto;
-  width: 28rem;
-  height: 30.2rem;
+  flex: 1 1 clamp(28rem, 20vw, 474rem);
+  /* width: 28rem;
+  width: 23.7288%; */
+  min-height: 30.2rem;
   padding: 2.8rem 3.2rem;
   /* bxsh */
   box-shadow: 0 8px 0 rgba(0, 0, 0, 0.05);
@@ -234,4 +235,119 @@ main > section:last-child {
 .column p + p strong {
   display: block;
   font-weight: 700;
+}
+
+/* 반응형 디자인 */
+/* 태블릿 */
+
+@media (max-width: 1024px) {
+  .inner {
+    width: 94.5313%;
+  }
+
+  .header nav {
+    height: 10rem;
+  }
+
+  .gnb {
+    display: none;
+  }
+
+  .btn-menu {
+    display: block;
+    width: 4.8rem;
+    height: 4.8rem;
+    /* background: url(../img/ico-menu2.svg) 50% 50%; */
+  }
+}
+
+/* 반응형 디자인 */
+/* 태블릿 */
+@media (max-width: 1024px) {
+  .hero {
+    height: 64rem;
+  }
+
+  .visual-title {
+    width: 46rem;
+    width: 47.5207%;
+    left: 6%;
+  }
+  .business-list {
+    flex-wrap: wrap;
+  }
+
+  .business-list li {
+    /* width: 47.4rem;
+    width: 48.9669%; */
+    height: 28rem;
+  }
+
+  .news-con .news-text {
+    width: 47.4rem;
+    width: 48.9669%;
+  }
+
+  .news-con figure {
+    width: 47.4rem;
+    width: 48.9669%;
+  }
+
+  .news-con {
+    gap: 2rem;
+  }
+
+  .column h5 + p {
+    column-count: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .visual-title {
+    width: 86%;
+  }
+  .news-con {
+    flex-direction: column;
+  }
+  .news-con .news-text,
+  .news-con figure {
+    width: 100%;
+  }
+}
+
+.works-list li {
+  flex-basis: 100%;
+}
+/* 모바일 */
+
+@media (max-width: 500px) {
+  .inner {
+    width: 89.7436%;
+  }
+
+  .hero {
+    height: 48rem;
+    height: calc(100vh - 10rem);
+  }
+
+  .visual-title {
+    width: 100%;
+    text-align: center;
+    left: 0;
+  }
+
+  .visual-title h2 {
+    font-size: 3rem;
+  }
+
+  .business-list li {
+    height: inherit;
+    height: auto;
+  }
+
+  .foot-con {
+    flex-direction: column;
+    text-align: center;
+    gap: 2.4rem;
+  }
 }

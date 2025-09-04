@@ -10,9 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <!-- header.header>inner.inner>logo.logo>h1>a -->
   <body>
@@ -21,6 +21,7 @@
       <a href="#portfolio">포트폴리오 바로가기</a>
     </div>
     <hr />
+    <!-- 모바일용 메뉴 -->
 
     <header class="header">
       <div class="inner">
@@ -45,6 +46,25 @@
       </div>
     </header>
     <hr />
+
+    <div class="m-menu">
+      <h2 class="m-logo">
+        <a href="">
+          <img src="../img/m-logo.svg" alt="webfluent" />
+        </a>
+      </h2>
+      <ul class="m-menu-list">
+        <li>ABOUT</li>
+        <li>WORK</li>
+        <li>NEWS</li>
+        <li>STORY</li>
+        <li>CONTACT US</li>
+      </ul>
+      <button type="button" class="btn-close">
+        <i class="hidden">닫기</i>
+      </button>
+    </div>
+
     <main id="main">
       <section class="hero">
         <figure>
@@ -258,5 +278,6 @@
         </div>
       </div>
     </footer>
+    <script src="../js/common.js"></script>
   </body>
 </html>
