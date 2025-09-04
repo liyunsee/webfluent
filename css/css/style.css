@@ -229,26 +229,3 @@ main > section:last-child {
   display: block;
   font-weight: 700;
 }
-
-/* footer */
-.footer {
-  background: #333;
-  color: #fff;
-  padding: 5.2rem 0;
-}
-
-.foot-con {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-}
-
-.foot-text {
-  font-weight: 700;
-  font-size: 1.4rem;
-  line-height: 1.5;
-}
-
-.foot-text p + p {
-  margin-top: 0.8rem;
-}

@@ -9,7 +9,7 @@
   --main-dark: #0069f3;
   --title-color: #222;
   --text-color: #555;
-  --black10:rgba(0, 0, 0, 0.1)
+    --black10:rgba(0, 0, 0, 0.1)
   --black20:rgba(0, 0, 0, 0.2)
   --black30:rgba(0, 0, 0, 0.3)
   --black40:rgba(0, 0, 0, 0.4)
@@ -72,6 +72,7 @@ body {
   min-width: 320px;
 }
 
+/* 공통 레이아웃  */
 .inner {
   width: 118rem;
   margin: 0 auto;
@@ -103,6 +104,30 @@ body {
   display: none;
 }
 
+/* footer */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 5.2rem 0;
+}
+
+.foot-con {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.foot-text {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.foot-text p + p {
+  margin-top: 0.8rem;
+}
+
+/* 애니메이션 적용 */
 @keyframes reveal-ani {
   0% {
     opacity: 0;
